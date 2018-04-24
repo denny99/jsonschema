@@ -24,7 +24,6 @@
         <jee.version>8.0</jee.version>
         <junit.version>4.12</junit.version>
         <log4j.version>1.2.12</log4j.version>
-        <swagger.version>2.0.0-rc4</swagger.version>
     </properties>
 
     <dependencies>
@@ -32,18 +31,6 @@
             <groupId>javax</groupId>
             <artifactId>javaee-api</artifactId>
             <version>${jee.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.swagger.core.v3</groupId>
-            <artifactId>swagger-jaxrs2</artifactId>
-            <version>${swagger.version}</version>
-            <scope>compile</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>com.google.guava</groupId>
-                    <artifactId>guava</artifactId>
-                </exclusion>
-            </exclusions>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
